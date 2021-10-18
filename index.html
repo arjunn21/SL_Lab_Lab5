@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <!--    Stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation</title>
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt = "logo"/>
+        </div>
+        <div class="title"><h1 class = "display">Python Documentation</h1></div>
+    </section>
+    <section id="navbar">
+        <div class="nav-item"><a href="index.html" class = "active">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a href = "downloads.html">Downloads</a></div>
+        <div class="nav-item"><a href="references.html">References</a></div>
+        <div class="nav-item"><a href="libraries.html">Libraries</a></div>
+        <div class="nav-item"><a href="#footer">Contact Me</a></div>
+    </section>
+    <section id="main">
+        <div class="sidebar">
+            <div class="sidebar-item"><a href="#tut">The Python Tutorial</a></div>
+            <div class="sidebar-item"><a href="#int">The Python Intrepreter</a></div>
+            <div class="sidebar-item"><a href="#inf">An Informal Introduction to Python</a></div>
+            <div class="sidebar-item"><a href="#calc">Using Python as a Calculator</a></div>
+            <div class="sidebar-item"><a href="#str">Strings</a></div>
+            <div class="sidebar-item"><a href="#ft">First steps towards programming</a></div>
+            <div class="sidebar-item"><a href="about.html">About</a></div>
+            <div class="sidebar-item"><a href="download.html">Downloads</a></div>
+            <div class="sidebar-item"><a href="references.html">References</a></div>
+            <div class="sidebar-item"><a href="libraries.html">Libraries</a></div>
+            <div class="sidebar-item"><a href="#footer">Contact Me</a></div>
+        </div>
+        <div class="content">
+            <div class="content-item" id = "tut">
+                <h1 class = "display">The Python Tutorial</h1>
+                <p class = "para">Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                <p class = "para">The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+                <p class = "para">The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+            </div>
+            <div class="content-item" id = "inf">
+                <h1 class = "display">An Informal Introduction to Python</h1>
+                <p class = "para">In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.</p>
+                <p class = "para">Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples.</p>
+            </div>
+            <div class="content-item" id = "calc">
+                <h1 class = "display">Using Python as a Calculator</h1>
+                <p class = "para">Let’s try some simple Python commands. Start the interpreter and wait for the primary prompt, >>>. (It shouldn’t take long)</p>
+                <h3>3.1.1. Numbers</h3>
+                <p class="para" id ="int">The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</p>
+                <div class="code-wrapper">
+                    <code>
+                        >>> 2 + 2 <br>
+                        4 <br>
+                        >>> 50 - 5*6 <br>
+                        20 <br>
+                        >>> (50 - 5*6) / 4 <br>
+                        5.0 <br>
+                        >>> 8 / 5  # division always returns a floating point number <br>
+                        1.6 <br>
+                    </code>
+                </div>
+                <h3 id = "str">3.1.2. Strings</h3>
+                <p class="para">Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:</p>
+                <div class="code-wrapper">
+                    <code>
+                        >>> 'spam eggs'  # single quotes <br>
+                        'spam eggs' <br>
+                        >>> 'doesn\'t'  # use \' to escape the single quote... <br>
+                        "doesn't" <br>
+                        >>> "doesn't"  # ...or use double quotes instead <br>
+                        "doesn't" <br>
+                        >>> '"Yes," they said.' <br>
+                        '"Yes," they said.' <br>
+                        >>> "\"Yes,\" they said." <br>
+                        '"Yes," they said.' <br>
+                        >>> '"Isn\'t," they said.'<br>
+                        '"Isn\'t," they said.' <br>
+                    </code>
+                </div>
+            </div>
+            <div class="content-item"  id = "ft">
+                <h1 class = "display">3.2. First Steps Towards Programming</h1>
+                <p class = "para">Of course, we can use Python for more complicated tasks than adding two and two together. For instance, we can write an initial sub-sequence of the Fibonacci series as follows:</p>
+                <div class="code-wrapper">
+                    <code>
+                        >>> # Fibonacci series: <br>
+                        ... # the sum of two elements defines the next <br>
+                        ... a, b = 0, 1 <br>
+                        >>> while a < 10: <br>
+                        ...     print(a) <br>
+                        ...     a, b = b, a+b <br>
+                        ... <br>
+                        0 <br>
+                        1 <br>
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        5 <br>
+                        8 <br>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class= "footer-logo">
+            <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt = "logo"/>
+            <div><h4>Python Documentation</h4></div>
+        </div>
+        <div class="home">
+            <h3>Home Address</h3>
+            <p>Somanath Nagar<br>Raghunathpur<br>Bhubaneswar</p>
+        </div>
+        <div class="clg">
+            <h3>College Address</h3>
+            <p>K-605, Boys Hostel - 2<br>Sikkim Manipal Institute of Technology<br>Rangpo, Sikkim</p></div>
+        <div class="contact">
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:satyaarjun.patra@gmail.com">satyaarjun.patra@gmail.com</a> <br>
+                Call:<a href="tel:+919337004836">+919337004836</a><br>
+                <a href="https://www.linkedin.com/in/satyaa21" target="_blank">LinkedIn</a></p>
+        </div>
+    </section>
+</body>
+</html>
